@@ -1,0 +1,146 @@
+main start at this time 1630640789.8160412
+before load_data step Time(s): 0.0017
+load ogbn-products
+-------------------------------------------------------------data = DglNodePropPredDataset(name=name)*************************** step Time(s): 1.3137
+finish loading ogbn-products
+-------------------------------------------------------------splitted_idx = data.get_idx_split()*************************** step Time(s): 0.2535
+-------------------------------------------------------------graph, labels = data[0]*************************** step Time(s): 4.2281
+tensor([[0],
+        [1],
+        [2],
+        ...,
+        [8],
+        [2],
+        [4]])
+graph after remove self connected edges
+Graph(num_nodes=2449029, num_edges=123718024,
+      ndata_schemes={'feat': Scheme(shape=(100,), dtype=torch.float32)}
+      edata_schemes={})
+-------------------------------------------------------------labels = labels[:, 0]*************************** step Time(s): 0.0010
+-------------------------------------------------------------graph.ndata['features'] = graph.ndata['feat']*************************** step Time(s): 0.0002
+-------------------------------------------------graph.ndata['labels'] = labels****************** step Time(s): 0.0001
+-------------------------------------------------train_nid, val_nid, test_nid = splitted_idx****************** step Time(s): 0.0597
+-------------------------------------------------end of load ogb****************** step Time(s): 0.0044
+finish constructing ogbn-products
+load ogb-products time total: 5.86074686050415
+#nodes: 2449029
+#edges: 123718024
+#classes: 47
+after load_dataset step Time(s): 5.9556
+after inductive else step Time(s): 0.0001
+args.data_cpu
+False
+after label step Time(s): 4.4775
+after train_g.create_formats_() step Time(s): 3.2220
+after pack data step Time(s): 10.7001
+
+
+full batch graph output nodes length
+196571
+block_to_graph.dstdata
+OUTPUT_NID.tolist()
+196571
+
+list for split-------------------------------------------------------------------------------------------
+196571
+
+-------------------------batches_nid_list ----------------------------------------------------------------
+2
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+[0.5001144624588572, 0.4998855375411429]
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.17642474174499512 sec
+Epoch 0 pseudo_mini_loss sum 5.119415283203125
+
+
+full batch graph output nodes length
+196571
+block_to_graph.dstdata
+OUTPUT_NID.tolist()
+196571
+
+list for split-------------------------------------------------------------------------------------------
+196571
+
+-------------------------batches_nid_list ----------------------------------------------------------------
+2
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+[0.5001144624588572, 0.4998855375411429]
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.11691904067993164 sec
+Epoch 1 pseudo_mini_loss sum 5.022446632385254
+
+
+full batch graph output nodes length
+196571
+block_to_graph.dstdata
+OUTPUT_NID.tolist()
+196571
+
+list for split-------------------------------------------------------------------------------------------
+196571
+
+-------------------------batches_nid_list ----------------------------------------------------------------
+2
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+[0.5001144624588572, 0.4998855375411429]
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.18126487731933594 sec
+Epoch 2 pseudo_mini_loss sum 4.926660537719727
+
+
+full batch graph output nodes length
+196571
+block_to_graph.dstdata
+OUTPUT_NID.tolist()
+196571
+
+list for split-------------------------------------------------------------------------------------------
+196571
+
+-------------------------batches_nid_list ----------------------------------------------------------------
+2
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+[0.5001144624588572, 0.4998855375411429]
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.12420153617858887 sec
+Epoch 3 pseudo_mini_loss sum 4.831171035766602
+
+
+full batch graph output nodes length
+196571
+block_to_graph.dstdata
+OUTPUT_NID.tolist()
+196571
+
+list for split-------------------------------------------------------------------------------------------
+196571
+
+-------------------------batches_nid_list ----------------------------------------------------------------
+2
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+[0.5001144624588572, 0.4998855375411429]
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.10982847213745117 sec
+Epoch 4 pseudo_mini_loss sum 4.741459846496582
+
+
+full batch graph output nodes length
+196571
+block_to_graph.dstdata
+OUTPUT_NID.tolist()
+196571
+
+list for split-------------------------------------------------------------------------------------------
+196571
+
+-------------------------batches_nid_list ----------------------------------------------------------------
+2
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+[0.5001144624588572, 0.4998855375411429]
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.10506081581115723 sec
+Epoch 5 pseudo_mini_loss sum 4.646076202392578
+Eval Acc 0.0399
+train Acc 0.0402
+Test Acc: 0.0335

@@ -1,0 +1,212 @@
+main start at this time 1630966750.140388
+before load_data step Time(s): 0.0017
+load ogbn-products
+-------------------------------------------------------------data = DglNodePropPredDataset(name=name)*************************** step Time(s): 1.5210
+finish loading ogbn-products
+-------------------------------------------------------------splitted_idx = data.get_idx_split()*************************** step Time(s): 0.2664
+-------------------------------------------------------------graph, labels = data[0]*************************** step Time(s): 4.4508
+tensor([[0],
+        [1],
+        [2],
+        ...,
+        [8],
+        [2],
+        [4]])
+graph after remove self connected edges
+Graph(num_nodes=2449029, num_edges=123718024,
+      ndata_schemes={'feat': Scheme(shape=(100,), dtype=torch.float32)}
+      edata_schemes={})
+-------------------------------------------------------------labels = labels[:, 0]*************************** step Time(s): 0.0012
+-------------------------------------------------------------graph.ndata['features'] = graph.ndata['feat']*************************** step Time(s): 0.0002
+-------------------------------------------------graph.ndata['labels'] = labels****************** step Time(s): 0.0001
+-------------------------------------------------train_nid, val_nid, test_nid = splitted_idx****************** step Time(s): 0.0540
+-------------------------------------------------end of load ogb****************** step Time(s): 0.0045
+finish constructing ogbn-products
+load ogb-products time total: 6.298345565795898
+#nodes: 2449029
+#edges: 123718024
+#classes: 47
+after load_dataset step Time(s): 6.4118
+after inductive else step Time(s): 0.0001
+args.data_cpu
+False
+after label step Time(s): 4.5934
+after train_g.create_formats_() step Time(s): 2.4668
+after pack data step Time(s): 10.9522
+Epoch 0
+----main run function: start generate block_dataloader from full batch train graph
+
+
+full batch graph output nodes length
+196571
+block_to_graph.dstdata
+OUTPUT_NID.tolist()
+196571
+
+list for split-------------------------------------------------------------------------------------------
+196571
+
+-------------------------batches_nid_list ----------------------------------------------------------------
+2
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+[0.5001144624588572, 0.4998855375411429]
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.11503767967224121 sec
+----main run function: block dataloader generation total spend   4.686107397079468
+length of block dataloader
+2
+current Epoch training on CPU without block data loder Time(s): 1.9910
+pseudo_mini_loss  2.429736375808716
+pseudo_mini_loss sum 4.863648414611816
+Epoch 00000 | Step 00000 | Loss 2.4297 | Train Acc 0.0189 | Speed (samples/sec) nan | GPU 7.5116 GB
+		avg iteration(step) data from cpu to GPU time:355.37040329 ms
+		avg iteration GPU training time:416.23152161 ms
+		avg iteration (step) total cpu time:772.28236198 ms
+Epoch 1
+----main run function: start generate block_dataloader from full batch train graph
+
+
+full batch graph output nodes length
+196571
+block_to_graph.dstdata
+OUTPUT_NID.tolist()
+196571
+
+list for split-------------------------------------------------------------------------------------------
+196571
+
+-------------------------batches_nid_list ----------------------------------------------------------------
+2
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+[0.5001144624588572, 0.4998855375411429]
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.1192770004272461 sec
+----main run function: block dataloader generation total spend   4.665444850921631
+length of block dataloader
+2
+current Epoch training on CPU without block data loder Time(s): 1.2026
+pseudo_mini_loss  2.3337533473968506
+pseudo_mini_loss sum 4.672466278076172
+		avg iteration(step) data from cpu to GPU time:179.76631927 ms
+		avg iteration GPU training time:201.52278137 ms
+		avg iteration (step) total cpu time:382.82227516 ms
+Epoch 2
+----main run function: start generate block_dataloader from full batch train graph
+
+
+full batch graph output nodes length
+196571
+block_to_graph.dstdata
+OUTPUT_NID.tolist()
+196571
+
+list for split-------------------------------------------------------------------------------------------
+196571
+
+-------------------------batches_nid_list ----------------------------------------------------------------
+2
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+[0.5001144624588572, 0.4998855375411429]
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.11535191535949707 sec
+----main run function: block dataloader generation total spend   4.530658721923828
+length of block dataloader
+2
+current Epoch training on CPU without block data loder Time(s): 1.1044
+pseudo_mini_loss  2.2395682334899902
+pseudo_mini_loss sum 4.484309196472168
+		avg iteration(step) data from cpu to GPU time:152.37566376 ms
+		avg iteration GPU training time:184.07266998 ms
+		avg iteration (step) total cpu time:337.78405190 ms
+Epoch 3
+----main run function: start generate block_dataloader from full batch train graph
+
+
+full batch graph output nodes length
+196571
+block_to_graph.dstdata
+OUTPUT_NID.tolist()
+196571
+
+list for split-------------------------------------------------------------------------------------------
+196571
+
+-------------------------batches_nid_list ----------------------------------------------------------------
+2
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+[0.5001144624588572, 0.4998855375411429]
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.1159520149230957 sec
+----main run function: block dataloader generation total spend   4.716505765914917
+length of block dataloader
+2
+current Epoch training on CPU without block data loder Time(s): 1.1432
+pseudo_mini_loss  2.144101142883301
+pseudo_mini_loss sum 4.293121337890625
+		avg iteration(step) data from cpu to GPU time:165.83065796 ms
+		avg iteration GPU training time:190.04325104 ms
+		avg iteration (step) total cpu time:357.28073120 ms
+Epoch 4
+----main run function: start generate block_dataloader from full batch train graph
+
+
+full batch graph output nodes length
+196571
+block_to_graph.dstdata
+OUTPUT_NID.tolist()
+196571
+
+list for split-------------------------------------------------------------------------------------------
+196571
+
+-------------------------batches_nid_list ----------------------------------------------------------------
+2
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+[0.5001144624588572, 0.4998855375411429]
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.11453723907470703 sec
+----main run function: block dataloader generation total spend   4.624618291854858
+length of block dataloader
+2
+current Epoch training on CPU without block data loder Time(s): 1.1169
+pseudo_mini_loss  2.0426387786865234
+pseudo_mini_loss sum 4.090218544006348
+		avg iteration(step) data from cpu to GPU time:144.72672272 ms
+		avg iteration GPU training time:196.46892548 ms
+		avg iteration (step) total cpu time:342.63217449 ms
+Epoch 5
+----main run function: start generate block_dataloader from full batch train graph
+
+
+full batch graph output nodes length
+196571
+block_to_graph.dstdata
+OUTPUT_NID.tolist()
+196571
+
+list for split-------------------------------------------------------------------------------------------
+196571
+
+-------------------------batches_nid_list ----------------------------------------------------------------
+2
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+[0.5001144624588572, 0.4998855375411429]
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.10825729370117188 sec
+----main run function: block dataloader generation total spend   4.594850540161133
+length of block dataloader
+2
+current Epoch training on CPU without block data loder Time(s): 1.1344
+pseudo_mini_loss  1.9328832626342773
+pseudo_mini_loss sum 3.871441602706909
+Epoch 00005 | Step 00000 | Loss 1.9329 | Train Acc 0.1724 | Speed (samples/sec) 177485.7556 | GPU 7.5133 GB
+		avg iteration(step) data from cpu to GPU time:158.59014130 ms
+		avg iteration GPU training time:191.59017944 ms
+		avg iteration (step) total cpu time:351.51922703 ms
+	total avg iteration(step) data from cpu to GPU time:0.15538080 s
+	total avg iteration GPU training time:0.19054376 s
+	total avg iteration (step) total cpu time:0.34730405 s
+
+total avg epoch training  total cpu time:1.12473315 s
+
+total avg block generate cpu time:4.61665833 second

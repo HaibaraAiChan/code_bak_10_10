@@ -1,0 +1,149 @@
+main start at this time 1632125844.608775
+before load_data step Time(s): 0.0018
+load ogbn-products
+-------------------------------------------------------------data = DglNodePropPredDataset(name=name)*************************** step Time(s): 1.4853
+finish loading ogbn-products
+-------------------------------------------------------------splitted_idx = data.get_idx_split()*************************** step Time(s): 0.2528
+-------------------------------------------------------------graph, labels = data[0]*************************** step Time(s): 4.0690
+tensor([[0],
+        [1],
+        [2],
+        ...,
+        [8],
+        [2],
+        [4]])
+graph after remove self connected edges
+Graph(num_nodes=2449029, num_edges=123718024,
+      ndata_schemes={'feat': Scheme(shape=(100,), dtype=torch.float32)}
+      edata_schemes={})
+-------------------------------------------------------------labels = labels[:, 0]*************************** step Time(s): 0.0013
+-------------------------------------------------------------graph.ndata['features'] = graph.ndata['feat']*************************** step Time(s): 0.0002
+-------------------------------------------------graph.ndata['labels'] = labels****************** step Time(s): 0.0001
+-------------------------------------------------train_nid, val_nid, test_nid = splitted_idx****************** step Time(s): 0.0635
+-------------------------------------------------end of load ogb****************** step Time(s): 0.0093
+finish constructing ogbn-products
+load ogb-products time total: 5.881513833999634
+#nodes: 2449029
+#edges: 123718024
+#classes: 47
+after load_dataset step Time(s): 5.9832
+after inductive else step Time(s): 0.0001
+args.data_cpu
+False
+after label step Time(s): 3.8411
+after train_g.create_formats_() step Time(s): 3.0038
+after pack data step Time(s): 13.2737
+
+----main run function: start generate block_dataloader from full batch train graph
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+4
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.1422901153564453 sec
+
+ *************************************   src nid of full_batch_block_graph
+
+ *************************************   dict_nid_2_local
+full batch block_eids_global_list
+1949041
+res----------------------------------------
+
+connection checking time 2.523454189300537
+total of block generation time 1.768474817276001
+average of block generation time 0.44211870431900024
+
+----main run function: block dataloader generation total spend   4.923202991485596
+
+----main run function: start generate block_dataloader from full batch train graph
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+4
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.10764288902282715 sec
+
+ *************************************   src nid of full_batch_block_graph
+
+ *************************************   dict_nid_2_local
+full batch block_eids_global_list
+1949041
+res----------------------------------------
+
+connection checking time 2.4197187423706055
+total of block generation time 1.6798901557922363
+average of block generation time 0.4199725389480591
+
+----main run function: block dataloader generation total spend   4.6773436069488525
+
+----main run function: start generate block_dataloader from full batch train graph
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+4
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.08560466766357422 sec
+
+ *************************************   src nid of full_batch_block_graph
+
+ *************************************   dict_nid_2_local
+full batch block_eids_global_list
+1949041
+res----------------------------------------
+
+connection checking time 2.481412887573242
+total of block generation time 1.6883864402770996
+average of block generation time 0.4220966100692749
+
+----main run function: block dataloader generation total spend   4.70594048500061
+
+----main run function: start generate block_dataloader from full batch train graph
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+4
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.07649993896484375 sec
+
+ *************************************   src nid of full_batch_block_graph
+
+ *************************************   dict_nid_2_local
+full batch block_eids_global_list
+1949041
+res----------------------------------------
+
+connection checking time 2.407057285308838
+total of block generation time 1.6930358409881592
+average of block generation time 0.4232589602470398
+
+----main run function: block dataloader generation total spend   4.5665411949157715
+
+----main run function: start generate block_dataloader from full batch train graph
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+4
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.08010196685791016 sec
+
+ *************************************   src nid of full_batch_block_graph
+
+ *************************************   dict_nid_2_local
+full batch block_eids_global_list
+1949041
+res----------------------------------------
+
+connection checking time 2.611487865447998
+total of block generation time 1.751957654953003
+average of block generation time 0.43798941373825073
+
+----main run function: block dataloader generation total spend   4.819551467895508
+
+----main run function: start generate block_dataloader from full batch train graph
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+4
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.08059310913085938 sec
+
+ *************************************   src nid of full_batch_block_graph
+
+ *************************************   dict_nid_2_local
+full batch block_eids_global_list
+1949041
+res----------------------------------------
+
+connection checking time 2.4765524864196777
+total of block generation time 1.6944248676300049
+average of block generation time 0.4236062169075012
+
+----main run function: block dataloader generation total spend   4.641754627227783

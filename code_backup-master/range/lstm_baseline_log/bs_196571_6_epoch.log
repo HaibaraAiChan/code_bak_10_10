@@ -1,0 +1,77 @@
+main start at this time 1630627068.1234086
+load ogbn-products
+-------------------------------------------------------------data = DglNodePropPredDataset(name=name)*************************** step Time(s): 1.5156
+finish loading ogbn-products
+-------------------------------------------------------------splitted_idx = data.get_idx_split()*************************** step Time(s): 0.2581
+-------------------------------------------------------------graph, labels = data[0]*************************** step Time(s): 4.1376
+tensor([[0],
+        [1],
+        [2],
+        ...,
+        [8],
+        [2],
+        [4]])
+graph after remove self connected edges
+Graph(num_nodes=2449029, num_edges=123718024,
+      ndata_schemes={'feat': Scheme(shape=(100,), dtype=torch.float32)}
+      edata_schemes={})
+-------------------------------------------------------------labels = labels[:, 0]*************************** step Time(s): 0.0011
+-------------------------------------------------------------graph.ndata['features'] = graph.ndata['feat']*************************** step Time(s): 0.0002
+-------------------------------------------------graph.ndata['labels'] = labels****************** step Time(s): 0.0001
+-------------------------------------------------train_nid, val_nid, test_nid = splitted_idx****************** step Time(s): 0.0624
+-------------------------------------------------end of load ogb****************** step Time(s): 0.0040
+finish constructing ogbn-products
+load ogb-products time total: 5.979175090789795
+#nodes: 2449029
+#edges: 123718024
+#classes: 47
+args.data_cpu
+False
+-----------------------------step  0 -------------------------------------
+-----------------------------------------after optimizer.step() 
+ Nvidia-smi: 14.8486328125 GB
+    Memory Allocated: 1.2842235565185547  GigaBytes
+Max Memory Allocated: 13.897004127502441  GigaBytes
+
+------------------------------------------------------current epoch train accumulated loss     tensor(4.8484, device='cuda:0', grad_fn=<AddBackward0>)
+Epoch Time(s): 3.5175
+-----------------------------step  0 -------------------------------------
+-----------------------------------------after optimizer.step() 
+ Nvidia-smi: 15.5693359375 GB
+    Memory Allocated: 1.2837629318237305  GigaBytes
+Max Memory Allocated: 13.931963443756104  GigaBytes
+
+------------------------------------------------------current epoch train accumulated loss     tensor(4.7211, device='cuda:0', grad_fn=<AddBackward0>)
+Epoch Time(s): 2.7644
+-----------------------------step  0 -------------------------------------
+-----------------------------------------after optimizer.step() 
+ Nvidia-smi: 15.5693359375 GB
+    Memory Allocated: 1.2839841842651367  GigaBytes
+Max Memory Allocated: 13.931963443756104  GigaBytes
+
+------------------------------------------------------current epoch train accumulated loss     tensor(4.5974, device='cuda:0', grad_fn=<AddBackward0>)
+Epoch Time(s): 2.7105
+-----------------------------step  0 -------------------------------------
+-----------------------------------------after optimizer.step() 
+ Nvidia-smi: 15.5693359375 GB
+    Memory Allocated: 1.2842235565185547  GigaBytes
+Max Memory Allocated: 13.931963443756104  GigaBytes
+
+------------------------------------------------------current epoch train accumulated loss     tensor(4.4682, device='cuda:0', grad_fn=<AddBackward0>)
+Epoch Time(s): 2.7970
+-----------------------------step  0 -------------------------------------
+-----------------------------------------after optimizer.step() 
+ Nvidia-smi: 15.5693359375 GB
+    Memory Allocated: 1.283858299255371  GigaBytes
+Max Memory Allocated: 13.932071208953857  GigaBytes
+
+------------------------------------------------------current epoch train accumulated loss     tensor(4.3251, device='cuda:0', grad_fn=<AddBackward0>)
+Epoch Time(s): 2.6562
+-----------------------------step  0 -------------------------------------
+-----------------------------------------after optimizer.step() 
+ Nvidia-smi: 15.5693359375 GB
+    Memory Allocated: 1.2844867706298828  GigaBytes
+Max Memory Allocated: 13.932424068450928  GigaBytes
+
+------------------------------------------------------current epoch train accumulated loss     tensor(4.1571, device='cuda:0', grad_fn=<AddBackward0>)
+Epoch Time(s): 2.7441

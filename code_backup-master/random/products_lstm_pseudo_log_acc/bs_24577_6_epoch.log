@@ -1,0 +1,36 @@
+main start at this time 1630967198.3129733
+before load_data step Time(s): 0.0017
+load ogbn-products
+-------------------------------------------------------------data = DglNodePropPredDataset(name=name)*************************** step Time(s): 1.3290
+finish loading ogbn-products
+-------------------------------------------------------------splitted_idx = data.get_idx_split()*************************** step Time(s): 0.2574
+-------------------------------------------------------------graph, labels = data[0]*************************** step Time(s): 4.0585
+tensor([[0],
+        [1],
+        [2],
+        ...,
+        [8],
+        [2],
+        [4]])
+graph after remove self connected edges
+Graph(num_nodes=2449029, num_edges=123718024,
+      ndata_schemes={'feat': Scheme(shape=(100,), dtype=torch.float32)}
+      edata_schemes={})
+-------------------------------------------------------------labels = labels[:, 0]*************************** step Time(s): 0.0011
+-------------------------------------------------------------graph.ndata['features'] = graph.ndata['feat']*************************** step Time(s): 0.0002
+-------------------------------------------------graph.ndata['labels'] = labels****************** step Time(s): 0.0001
+-------------------------------------------------train_nid, val_nid, test_nid = splitted_idx****************** step Time(s): 0.0711
+-------------------------------------------------end of load ogb****************** step Time(s): 0.0041
+finish constructing ogbn-products
+load ogb-products time total: 5.721570730209351
+#nodes: 2449029
+#edges: 123718024
+#classes: 47
+after load_dataset step Time(s): 5.8421
+after inductive else step Time(s): 0.0001
+args.data_cpu
+False
+after label step Time(s): 4.7219
+after train_g.create_formats_() step Time(s): 3.1929
+after pack data step Time(s): 11.4900
+Epoch 0
