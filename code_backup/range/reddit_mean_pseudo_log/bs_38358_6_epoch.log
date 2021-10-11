@@ -1,0 +1,170 @@
+main start at this time 1633733820.4401147
+before load_data step Time(s): 0.0017
+after load_dataset step Time(s): 5.4847
+after inductive else step Time(s): 0.0001
+args.data_cpu
+False
+after label step Time(s): 3.8009
+after train_g.create_formats_() step Time(s): 0.9341
+after pack data step Time(s): 0.0075
+Epoch 0
+----main run function: start generate block_dataloader from full batch train graph
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+4
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.062181711196899414 sec
+
+ *************************************   src nid of full_batch_block_graph
+
+ *************************************   dict_nid_2_local
+full batch block_eids_global_list
+1485901
+res----------------------------------------
+
+connection checking time 1.5075104236602783
+total of block generation time 0.6729600429534912
+average of block generation time 0.1682400107383728
+----main run function: block dataloader generation total spend   2.4870736598968506
+length of block dataloader
+4
+current Epoch training on CPU without block data loder Time(s): 1.4535
+pseudo_mini_loss sum 5.462961673736572
+Epoch 00000 | Step 00000 | Loss 1.2630 | Train Acc 0.0266 | Speed (samples/sec) 352926.6741 | GPU 1.1155 GB
+		avg iteration(step) data from cpu to GPU time:158.20095062 ms
+		avg iteration GPU training time:202.38017845 ms
+		avg iteration (step) total cpu time:362.49887943 ms
+Epoch 1
+----main run function: start generate block_dataloader from full batch train graph
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+4
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.0643165111541748 sec
+
+ *************************************   src nid of full_batch_block_graph
+
+ *************************************   dict_nid_2_local
+full batch block_eids_global_list
+1485901
+res----------------------------------------
+
+connection checking time 1.399585247039795
+total of block generation time 0.8196597099304199
+average of block generation time 0.20491492748260498
+----main run function: block dataloader generation total spend   2.586932420730591
+length of block dataloader
+4
+current Epoch training on CPU without block data loder Time(s): 0.4847
+pseudo_mini_loss sum 4.594940185546875
+		avg iteration(step) data from cpu to GPU time:100.27051353 ms
+		avg iteration GPU training time:19.31871986 ms
+		avg iteration (step) total cpu time:120.44799328 ms
+Epoch 2
+----main run function: start generate block_dataloader from full batch train graph
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+4
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.07371068000793457 sec
+
+ *************************************   src nid of full_batch_block_graph
+
+ *************************************   dict_nid_2_local
+full batch block_eids_global_list
+1485901
+res----------------------------------------
+
+connection checking time 1.5026764869689941
+total of block generation time 0.7342522144317627
+average of block generation time 0.18356305360794067
+----main run function: block dataloader generation total spend   2.6475889682769775
+length of block dataloader
+4
+current Epoch training on CPU without block data loder Time(s): 0.4982
+pseudo_mini_loss sum 3.889669895172119
+		avg iteration(step) data from cpu to GPU time:103.80064774 ms
+		avg iteration GPU training time:18.83800745 ms
+		avg iteration (step) total cpu time:123.47573042 ms
+Epoch 3
+----main run function: start generate block_dataloader from full batch train graph
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+4
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.06288361549377441 sec
+
+ *************************************   src nid of full_batch_block_graph
+
+ *************************************   dict_nid_2_local
+full batch block_eids_global_list
+1485901
+res----------------------------------------
+
+connection checking time 1.4387381076812744
+total of block generation time 0.8231189250946045
+average of block generation time 0.20577973127365112
+----main run function: block dataloader generation total spend   2.6129276752471924
+length of block dataloader
+4
+current Epoch training on CPU without block data loder Time(s): 0.5040
+pseudo_mini_loss sum 3.3886351585388184
+		avg iteration(step) data from cpu to GPU time:106.60055161 ms
+		avg iteration GPU training time:17.64120007 ms
+		avg iteration (step) total cpu time:125.11891127 ms
+Epoch 4
+----main run function: start generate block_dataloader from full batch train graph
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+4
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.059049129486083984 sec
+
+ *************************************   src nid of full_batch_block_graph
+
+ *************************************   dict_nid_2_local
+full batch block_eids_global_list
+1485901
+res----------------------------------------
+
+connection checking time 1.4460489749908447
+total of block generation time 0.8508038520812988
+average of block generation time 0.2127009630203247
+----main run function: block dataloader generation total spend   2.6708943843841553
+length of block dataloader
+4
+current Epoch training on CPU without block data loder Time(s): 0.4783
+pseudo_mini_loss sum 3.025040864944458
+		avg iteration(step) data from cpu to GPU time:99.84530449 ms
+		avg iteration GPU training time:18.26492786 ms
+		avg iteration (step) total cpu time:118.88653040 ms
+Epoch 5
+----main run function: start generate block_dataloader from full batch train graph
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+4
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.057378292083740234 sec
+
+ *************************************   src nid of full_batch_block_graph
+
+ *************************************   dict_nid_2_local
+full batch block_eids_global_list
+1485901
+res----------------------------------------
+
+connection checking time 1.4725430011749268
+total of block generation time 0.6549994945526123
+average of block generation time 0.16374987363815308
+----main run function: block dataloader generation total spend   2.5053679943084717
+length of block dataloader
+4
+current Epoch training on CPU without block data loder Time(s): 0.4594
+pseudo_mini_loss sum 2.7226765155792236
+Epoch 00005 | Step 00000 | Loss 0.7158 | Train Acc 0.2867 | Speed (samples/sec) 320958.8163 | GPU 1.1173 GB
+		avg iteration(step) data from cpu to GPU time:94.89643860 ms
+		avg iteration GPU training time:18.21296835 ms
+		avg iteration (step) total cpu time:113.98035288 ms
+	total avg iteration(step) data from cpu to GPU time:0.10128574 s
+	total avg iteration GPU training time:0.01823928 s
+	total avg iteration (step) total cpu time:0.12036538 s
+
+total avg epoch training  total cpu time:0.48500675 s
+
+total avg block generate cpu time:2.60919476 second
+train Acc: 0.4214
+Test Acc: 0.4138

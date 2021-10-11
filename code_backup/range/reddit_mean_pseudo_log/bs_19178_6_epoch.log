@@ -1,0 +1,187 @@
+main start at this time 1630963021.0436363
+before load_data step Time(s): 0.0017
+after load_dataset step Time(s): 5.0658
+after inductive else step Time(s): 0.0001
+args.data_cpu
+False
+after label step Time(s): 4.6572
+after train_g.create_formats_() step Time(s): 1.1739
+after pack data step Time(s): 0.0091
+Epoch 0
+----main run function: start generate block_dataloader from full batch train graph
+
+
+full batch graph output nodes length
+153431
+block_to_graph.dstdata
+OUTPUT_NID.tolist()
+153431
+
+list for split-------------------------------------------------------------------------------------------
+153431
+
+-------------------------batches_nid_list ----------------------------------------------------------------
+9
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+[0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 4.5623113973056294e-05]
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.10537362098693848 sec
+----main run function: block dataloader generation total spend   4.02461314201355
+length of block dataloader
+9
+current Epoch training on CPU without block data loder Time(s): 1.7591
+pseudo_mini_loss  0.0002808581048157066
+pseudo_mini_loss sum 5.462029457092285
+Epoch 00000 | Step 00000 | Loss 0.0003 | Train Acc 0.0000 | Speed (samples/sec) 178130.7908 | GPU 0.9321 GB
+		avg iteration(step) data from cpu to GPU time:107.58103848 ms
+		avg iteration GPU training time:87.29824066 ms
+		avg iteration (step) total cpu time:195.02396054 ms
+Epoch 1
+----main run function: start generate block_dataloader from full batch train graph
+
+
+full batch graph output nodes length
+153431
+block_to_graph.dstdata
+OUTPUT_NID.tolist()
+153431
+
+list for split-------------------------------------------------------------------------------------------
+153431
+
+-------------------------batches_nid_list ----------------------------------------------------------------
+9
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+[0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 4.5623113973056294e-05]
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.08343219757080078 sec
+----main run function: block dataloader generation total spend   4.08602499961853
+length of block dataloader
+9
+current Epoch training on CPU without block data loder Time(s): 0.7423
+pseudo_mini_loss  0.00024984314222820103
+pseudo_mini_loss sum 4.592750549316406
+		avg iteration(step) data from cpu to GPU time:70.39544815 ms
+		avg iteration GPU training time:11.42380073 ms
+		avg iteration (step) total cpu time:81.98743396 ms
+Epoch 2
+----main run function: start generate block_dataloader from full batch train graph
+
+
+full batch graph output nodes length
+153431
+block_to_graph.dstdata
+OUTPUT_NID.tolist()
+153431
+
+list for split-------------------------------------------------------------------------------------------
+153431
+
+-------------------------batches_nid_list ----------------------------------------------------------------
+9
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+[0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 4.5623113973056294e-05]
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.08087277412414551 sec
+----main run function: block dataloader generation total spend   4.076806306838989
+length of block dataloader
+9
+current Epoch training on CPU without block data loder Time(s): 0.7066
+pseudo_mini_loss  0.0002183265460189432
+pseudo_mini_loss sum 3.8881402015686035
+		avg iteration(step) data from cpu to GPU time:67.43071890 ms
+		avg iteration GPU training time:10.55640189 ms
+		avg iteration (step) total cpu time:78.12563578 ms
+Epoch 3
+----main run function: start generate block_dataloader from full batch train graph
+
+
+full batch graph output nodes length
+153431
+block_to_graph.dstdata
+OUTPUT_NID.tolist()
+153431
+
+list for split-------------------------------------------------------------------------------------------
+153431
+
+-------------------------batches_nid_list ----------------------------------------------------------------
+9
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+[0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 4.5623113973056294e-05]
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.07970952987670898 sec
+----main run function: block dataloader generation total spend   4.156362771987915
+length of block dataloader
+9
+current Epoch training on CPU without block data loder Time(s): 0.7038
+pseudo_mini_loss  0.0001927569101098925
+pseudo_mini_loss sum 3.3883535861968994
+		avg iteration(step) data from cpu to GPU time:67.62898837 ms
+		avg iteration GPU training time:9.98222589 ms
+		avg iteration (step) total cpu time:77.74779532 ms
+Epoch 4
+----main run function: start generate block_dataloader from full batch train graph
+
+
+full batch graph output nodes length
+153431
+block_to_graph.dstdata
+OUTPUT_NID.tolist()
+153431
+
+list for split-------------------------------------------------------------------------------------------
+153431
+
+-------------------------batches_nid_list ----------------------------------------------------------------
+9
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+[0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 4.5623113973056294e-05]
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.08521032333374023 sec
+----main run function: block dataloader generation total spend   4.134734869003296
+length of block dataloader
+9
+current Epoch training on CPU without block data loder Time(s): 0.7261
+pseudo_mini_loss  0.00017103334539569914
+pseudo_mini_loss sum 3.0270910263061523
+		avg iteration(step) data from cpu to GPU time:70.29898948 ms
+		avg iteration GPU training time:9.86056879 ms
+		avg iteration (step) total cpu time:80.29214541 ms
+Epoch 5
+----main run function: start generate block_dataloader from full batch train graph
+
+
+full batch graph output nodes length
+153431
+block_to_graph.dstdata
+OUTPUT_NID.tolist()
+153431
+
+list for split-------------------------------------------------------------------------------------------
+153431
+
+-------------------------batches_nid_list ----------------------------------------------------------------
+9
+- -- -- --- -- -- --weights_list-- -- -- ------- -- -- -----
+[0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 0.12499429711075337, 4.5623113973056294e-05]
+after generate_random_mini_batch_seeds_list
+time of batches_nid_list generation : 0.08226919174194336 sec
+----main run function: block dataloader generation total spend   4.484363317489624
+length of block dataloader
+9
+current Epoch training on CPU without block data loder Time(s): 0.7769
+pseudo_mini_loss  0.00015245999384205788
+pseudo_mini_loss sum 2.723926544189453
+Epoch 00005 | Step 00000 | Loss 0.0002 | Train Acc 0.2857 | Speed (samples/sec) 188963.6052 | GPU 0.9328 GB
+		avg iteration(step) data from cpu to GPU time:74.86400006 ms
+		avg iteration GPU training time:10.76446581 ms
+		avg iteration (step) total cpu time:85.78462071 ms
+		Eval Acc 0.4192
+	total avg iteration(step) data from cpu to GPU time:70.05567420 ms
+	total avg iteration GPU training time:10.29091560 ms
+	total avg iteration (step) total cpu time:80.48754930 ms
+
+total avg epoch training  total cpu time:728.35457325 ms
+train Acc: 0.4213
+Test Acc: 0.4137
